@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "f4cab927-0375-437c-82d4-4ee78037e6da",
+		"name": "ppfly-webservice-demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ppfly-webservice-demo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "SOAPAction",
+						"value": "It can be any string",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:niuba=\"http://example\">\r\n    <soapenv:Body>\r\n        <!-- <niuba:sayHelloWorldFrom>\r\n            <niuba:from>test</niuba:from>\r\n        </niuba:sayHelloWorldFrom> -->\r\n        <!-- <niuba:getName>\r\n            <niuba:name>zhangsan</niuba:name>\r\n        </niuba:getName> -->\r\n        <!-- <niuba:getNameList>\r\n        </niuba:getNameList> -->\r\n         <niuba:sum>\r\n            <niuba:a>123</niuba:a>\r\n            <niuba:b>234</niuba:b>\r\n        </niuba:sum>\r\n    </soapenv:Body>\r\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/WebSerDemo/services/HelloWorld?wsdl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"WebSerDemo",
+						"services",
+						"HelloWorld"
+					],
+					"query": [
+						{
+							"key": "wsdl",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

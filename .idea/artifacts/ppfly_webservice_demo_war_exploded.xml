@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ppfly-webservice-demo:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ppfly_webservice_demo_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ppfly-webservice-demo/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ppfly-webservice-demo" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="axis" />
+          <element id="library" level="project" name="JAX-WS-Apache Axis" />
+        </element>
+      </element>
+      <element id="library" level="project" name="axis" />
+      <element id="library" level="project" name="JAX-WS-Apache Axis" />
+    </root>
+  </artifact>
+</component>
