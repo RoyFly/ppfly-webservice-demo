@@ -16,13 +16,13 @@ public class HelloWorld {
         return result;
     }
 
-    //获取姓名接口
+    //对外开放的接口-获取姓名接口
     public String getName(String name) {
         if (name == null || name.equals("null") || name.equals("")) {
             name = "there is no this name!!";
             return name;
         }
-        System.out.println("sayHelloWorldFrom方法被调用--->name=" + name);
+        System.out.println("getName方法被调用--->name=" + name);
         return "welcome " + name + " to [ppfly webservice demo].";
     }
 
